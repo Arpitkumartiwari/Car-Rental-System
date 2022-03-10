@@ -2,4 +2,5 @@
 A simple car rental desktop app made using :
 - C#
 - WPF
-- MS SQL
+- ADO.NET
+- SQL Server
