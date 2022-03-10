@@ -1,0 +1,45 @@
+﻿<Window x:Class="WpfApp1.AdminManageCat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="AdminManageCat" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF28c5c0 " Offset="0"/>
+                <GradientStop Color="#fff77575 "  Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Button x:Name="GBK" Content="GO Back" HorizontalAlignment="Left" Height="51" Margin="621,296,0,0" VerticalAlignment="Top" Width="87" Click="GBK_Click" Background="#ff25d1e9 "/>
+        <Label Content="Category Name : " HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="AddCatName" HorizontalAlignment="Left" Height="23" Margin="112,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Seating Capacity : " HorizontalAlignment="Left" Margin="10,147,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.442,1.087"/>
+        <TextBox x:Name="AddSeat" HorizontalAlignment="Left" Height="23" Margin="113,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="190" Margin="10,43,0,0" VerticalAlignment="Top" Width="234">
+            <Button x:Name="AddBtn" Content="Add" HorizontalAlignment="Left" Height="32" Margin="57.667,146.667,0,0" VerticalAlignment="Top" Width="92" Click="AddBtn_Click" Background="#FF9af23d "/>
+        </Border>
+        <Label Content="Category Name : " HorizontalAlignment="Left" Margin="274,133,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="UpdateCatName" HorizontalAlignment="Left" Height="23" Margin="389,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="105"/>
+        <Label Content="Seating Capacity : " HorizontalAlignment="Left" Margin="274,163,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.442,1.087"/>
+        <TextBox x:Name="UpdateSeat"  HorizontalAlignment="Left" Height="23" Margin="389,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="105"/>
+        <Label Content="Category ID : " HorizontalAlignment="Left" Margin="294,107,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="UpdateCatID" HorizontalAlignment="Left" Height="23" Margin="389,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="105"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="190" Margin="274,42,0,0" VerticalAlignment="Top" Width="234">
+            <Button x:Name="UpdateBtn" Content="Update" HorizontalAlignment="Left" Height="27" Margin="62.667,151.667,0,0" VerticalAlignment="Top" Width="92" Click="UpdateBtn_Click" Background="#FFF2e849 "/>
+        </Border>
+        <Label Content="Enter Category ID : " HorizontalAlignment="Left" Margin="557,129,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="DelCatID" HorizontalAlignment="Left" Height="23" Margin="675,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" TextChanged="TextBox_TextChanged"/>
+        <Button x:Name="DelBtn" Content="Delete" HorizontalAlignment="Left" Margin="621,197,0,0" VerticalAlignment="Top" Width="90" Height="30" Click="DelBtn_Click" Background="#FFEC2d2d "/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="190" Margin="539,44,0,0" VerticalAlignment="Top" Width="234"/>
+
+        <TextBlock TextDecorations="Underline" FontSize="16" FontFamily="Comic Sans MS" Height="30" Margin="52,49,588.333,341.667">Add New Category</TextBlock>
+        
+            <TextBlock TextDecorations="Underline" FontSize="16" Height="30" Margin="294,53,-294.667,337.667"><Run Text="Update Category Details"/></TextBlock>
+        
+        <TextBlock TextDecorations="Underline" FontSize="16" Height="30" Margin="607,53,-607.667,337.667"><Run Text="Delete Category"/></TextBlock>
+    </Grid>
+</Window>

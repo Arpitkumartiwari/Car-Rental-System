@@ -1,0 +1,51 @@
+﻿<Window x:Class="WpfApp1.UserSide"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="UserSide" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF28c5c0 " Offset="0"/>
+                <GradientStop Color="#fff77575 " Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="RegisterBtn" Content="Register" HorizontalAlignment="Left" Height="40" Margin="149,314,0,0" VerticalAlignment="Top" Width="107" Click="Register_Button_Click" Background="#FF9af23d "/>
+        <TextBox x:Name="UserName" HorizontalAlignment="Left" Height="25" Margin="221,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="LicenceNumber" HorizontalAlignment="Left" Height="25" Margin="221,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107"/>
+        <TextBox x:Name="Password" HorizontalAlignment="Left" Height="25" Margin="221,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107"/>
+        <TextBox x:Name="PhoneNumber" HorizontalAlignment="Left" Height="25" Margin="221,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107"/>
+        <TextBox x:Name="EmailId" HorizontalAlignment="Left" Height="25" Margin="221,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107"/>
+        <Label Content="Name" HorizontalAlignment="Left" Height="25" Margin="96,80,0,0" VerticalAlignment="Top" Width="97"/>
+        <Label Content="Licence Numberl" HorizontalAlignment="Left" Height="25" Margin="96,126,0,0" VerticalAlignment="Top" Width="106"/>
+        <Label Content="Password" HorizontalAlignment="Left" Height="25" Margin="96,178,0,0" VerticalAlignment="Top" Width="97"/>
+        <Label Content="Phone Number " HorizontalAlignment="Left" Height="25" Margin="96,226,0,0" VerticalAlignment="Top" Width="97"/>
+        <Label Content="Email ID " HorizontalAlignment="Left" Height="27" Margin="96,267,0,0" VerticalAlignment="Top" Width="97"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="380" Margin="79,24,0,0" VerticalAlignment="Top" Width="263" RenderTransformOrigin="0.5,0.5">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.038"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+        </Border>
+        <Label Content="User ID" HorizontalAlignment="Left" Height="28" Margin="514,109,0,0" VerticalAlignment="Top" Width="79" RenderTransformOrigin="0.557,0.389"/>
+        <Label Content="Password" HorizontalAlignment="Left" Height="25" Margin="514,162,0,0" VerticalAlignment="Top" Width="79"/>
+        <TextBox x:Name="LgnUsrName" HorizontalAlignment="Left" Height="28" Margin="598,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="263" Margin="462,24,0,0" VerticalAlignment="Top" Width="263"/>
+        <PasswordBox x:Name="LgnPassword" HorizontalAlignment="Left" Height="28" Margin="598,159,0,0" VerticalAlignment="Top" Width="102"/>
+        <Button x:Name="LgnBtn" Content="Next&#xD;&#xA;" HorizontalAlignment="Left" Height="43" Margin="542,208,0,0" VerticalAlignment="Top" Width="112" Click="LgnBtn_Click" FontSize="22" Background="#FF9af23d "/>
+        <Label Margin="555,37,119.333,333.667" FontWeight="Bold" FontFamily="Comic Sans MS" FontSize="24">
+            <TextBlock TextDecorations="Underline">Login</TextBlock>
+        </Label>
+        <Label Margin="104,24,465.333,340.667" FontWeight="Bold" FontFamily="Comic Sans MS" FontSize="24">
+            <TextBlock TextDecorations="Underline">Register Yourself</TextBlock>
+        </Label>
+        <Button x:Name="GBK" Content="Go Back" HorizontalAlignment="Left" Height="48" VerticalAlignment="Top" Width="85" Click="GBK_Click" Margin="569,323,0,0" Background="#FF25D1E9" FontSize="18"/>
+    </Grid>
+</Window>
