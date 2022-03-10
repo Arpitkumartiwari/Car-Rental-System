@@ -1,6 +1,6 @@
 # Car-Rental-System
 A simple car rental desktop app made using :
-- C#
-- WPF
-- ADO.NET
-- SQL Server
+- C#(Language)
+- WPF (Frontend)
+- ADO.NET (For data access)
+- SQL Server (Backend)
