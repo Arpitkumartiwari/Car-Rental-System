@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfApp1.UserAction"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="UserAction" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF28c5c0 " Offset="0"/>
+                <GradientStop Color="#fff77575 " Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="ViewCarBtn1" Content="View Cars" HorizontalAlignment="Left" Height="41" Margin="52,109,0,0" VerticalAlignment="Top" Width="127" Click="ViewCarBtn_Click"/>
+        <Button x:Name="ViewCatBtn1" Content="View Categories" HorizontalAlignment="Left" Height="41" Margin="52,162,0,0" VerticalAlignment="Top" Width="127" Click="ViewCatBtn_Click"/>
+        <Button x:Name="BookCarBtn1" Content="Book A Car" HorizontalAlignment="Left" Height="41" Margin="52,221,0,0" VerticalAlignment="Top" Width="127" Click="BookCarBtn_Click"/>
+        <Button x:Name="ReturnCarBtn1" Content="Return A Car" HorizontalAlignment="Left" Height="41" Margin="347,354,0,0" VerticalAlignment="Top" Width="127" Click="ReturnCarBtn1_Click"/>
+        <DataGrid x:Name="UserDG1" HorizontalAlignment="Left" Height="220" Margin="312,109,0,0" VerticalAlignment="Top" Width="432" SelectionChanged="DataGrid_SelectionChanged">
+            <DataGrid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#fff77575" Offset="0"/>
+                    <GradientStop Color="#FF28c5c0" Offset="1"/>
+                </LinearGradientBrush>
+            </DataGrid.Background>
+        </DataGrid>
+        <TextBox x:Name="CarId" HorizontalAlignment="Left" Height="41" Margin="190,354,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" RenderTransformOrigin="0.497,0.301"/>
+        <Label Content="Enter Car ID to Return" HorizontalAlignment="Left" Height="41" Margin="33,354,0,0" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.618,1.447"/>
+        <Button x:Name="MyBooking" Content="My Bookings" HorizontalAlignment="Left" Height="42" Margin="52,287,0,0" VerticalAlignment="Top" Width="127" Click="MyBooking_Click"/>
+        <Label Margin="458,51,150.333,316.667" FontSize="24">
+            <TextBlock TextDecorations="Underline" FontWeight="Bold"><Run Text="Data Display"/></TextBlock>
+        </Label>
+        <Label Margin="52,39,556.333,328.667" FontSize="24">
+            <TextBlock TextDecorations="Underline" FontWeight="Bold"><Run Text="User Actions"/></TextBlock>
+        </Label>
+        <Button x:Name="UsrLogout" Content="Log Out" HorizontalAlignment="Left" Margin="670,354,0,0" VerticalAlignment="Top" Width="100" Height="41" Click="UsrLogout_Click"/>
+        <TextBlock x:Name="welcome" HorizontalAlignment="Left" Margin="279,10,0,0" TextWrapping="Wrap" Text="Text"  VerticalAlignment="Top" Height="31" Width="215" FontSize="20" FontWeight="Bold" FontFamily="Comic Sans MS"/>
+    </Grid>
+</Window>
